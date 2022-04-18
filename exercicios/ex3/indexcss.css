@@ -1,0 +1,47 @@
+body{
+    background-color: lightblue;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+p{
+    font-family: verdana;
+    font-size: 20px;    
+}
+header#principal
+{
+    border-bottom: 20px #787878 solid;
+    height: 160px;
+    background: url("logo_carroleilao.jpg") no-repeat 0px 20px;
+    background-size: 170px;
+}
+header#principal h1{
+   display:none;
+   font-family: Arial, sans-serif;
+   font-size: 30px;    
+}
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: #00FFFF;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #ccc8c2;
+    padding: 10px;
+    margin: 2px;
+}
+nav#menu li:hover{
+    background-color: #669999;
+    transition: background-color 1s;
+}

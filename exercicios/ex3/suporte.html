@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Pagina exemplo 1 JS</title>
+    <link rel="icon" href="logo_carroleilao.jpg"/>
+</head>
+<body>
+    <h1>Exemplos de JavaScript</h1>
+    <p id="principal">Texto Qualquer</p>
+    <p id="principal2">Texto Qualquer</p>
+    <script>
+        document.write("Essa página foi modificada em.."+
+                      document.lastModified) 
+        var preValor = 10.00;
+        var tipQtde = preValor * 0.15;
+        var message1 = "O valor é:"; 
+        var message2 = "\nDesconto de 15%, apresenta uma economia de: R$"; alert(message1 + preValor + message2 + tipQtde);
+        var horas;
+        function apresentarBom(){
+           var horaAtual = new Date().getHours;
+            if (horaAtual <= 12){
+                horas = "Bom dia";
+                console.log("Bom dia");
+            }else if (horaAtual <= 18){
+                horas = "Boa tarde";
+                console.log("Boa tarde");
+            }else {
+                horas = "Boa noite";
+                console.log("Boa noite");
+            } alert(horas); 
+        }
+        apresentarBom();
+        
+        const times = ["Flamengo", "Parmera", "Corinthias", "Avaí", "Ponte Preta"];
+        let text = "<ul>";
+        times.forEach(myFunction);
+        text += "</ul>";
+        
+        document.getElementById("principal").innerHTML = text;
+        function myFunction(value){
+            text += "<li>" + value + "</li>"
+        }
+        const timess = ["Timao", "Ponte Preta", "Sao Paulo"];
+        document.getElementById("principal2").innerHTML = timess;
+         
+        var soma = 0;
+        var num, ordem;
+        for(var soma = 1; soma < 4; soma++){
+            switch(soma){
+                case 1:
+                    ordem = "Primeiro";
+                case 2:
+                    ordem = "Segundo";
+                case 3:
+                    ordem = "Terceiro";
+            }
+            num = prompt("A Ordem " + ordem + " número ", 1);
+            soma += Number(num);
+        }
+        alert("A média é: " + soma / 3);
+    </script>
+    <p id="novo"></p>
+    <button onclick="myTime()">Ordenar Times</button>
+    <script>
+        const timeS = ["Flamengo", "São Paulo", "Palmeiras", "Corinthians", "Juventude"];
+        document.getElementById("novo").innerHTML = timeS;
+        function myTime(){
+            timeS.sort();
+            
+            document.getElementById("novo").innerHTML = timeS;
+        }
+    </script>
+    
+</body>
+</html>

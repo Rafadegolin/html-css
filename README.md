@@ -1,4 +1,4 @@
-# html-css
+# Exercícios / Testes de HTML e CSS
 
-Estou aprendendo a criar páginas web :D
+Neste repositórios estaram alguns testes e estudos de HTML e CSS. Sendo assim estudando e melhorando sempre a programação web.
  
